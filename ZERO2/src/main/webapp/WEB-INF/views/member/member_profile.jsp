@@ -247,10 +247,13 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 <script type="text/javascript">
 
 	<%-- 프로필 사진 변경 --%>
-	 function updateImage() {
+	 function updateImage(obj) {
 		 
-		    let profileForm = $('#profile')[0];  // 이녀석도 배열로 리턴이 된다.
-		    // console.log(profileForm);
+		    let profileForm = $('#profileForm')[0];  // 이녀석도 배열로 리턴이 된다.
+		    console.log(profileForm);
+// 		    let profileForm = obj.files;  // 이녀석도 배열로 리턴이 된다.
+		    
+		    
 		    let formData = new FormData(profileForm);  // 폼의 모든 데이터를 가지고 있다.
 		    $.ajax({
 		      type: "put",
@@ -302,7 +305,7 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 			
 					<%-- 본문 - 프로필 관리 --%>
 						<div data-v-75326462="" data-v-473e7c14="" class="content_area">
-						<form action="/user/profileUpdate" method="post" enctype="multipart/form-data">
+						<form action="/user/profileUpdate" method="post" enctype="multipart/form-data" id="profileForm">
 							<div data-v-75326462="" class="my_profile">
 								<div data-v-88eb18f6="" data-v-75326462="" class="content_title border">
 									<div data-v-88eb18f6="" class="title">
@@ -310,7 +313,7 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 									</div>
 								</div>
 								<div data-v-4b474860="" data-v-75326462="" class="user_profile">
-									<input type="file" accept=".jpeg,.png" id="profile" name="profile" hidden="hidden" onchange="updateImage()">
+									<input type="file" accept=".jpeg,.png" id="profile" name="profile" hidden="hidden" onchange="updateImage(this)">
 									<div data-v-4b474860="" class="profile_thumb">
 										<img data-v-4b474860="" src="${pageContext.request.contextPath }/resources/img_member/blank_profile.4347742.png" alt="사용자 이미지" class="thumb_img">
 									</div>
