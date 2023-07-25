@@ -1,4 +1,4 @@
-package com.itwillbs.zero.controller;
+package com.itwillbs.zero2.controller;
 
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;

@@ -23,9 +23,9 @@
 <link
 	href="${pageContext.request.contextPath }/resources/css/sidebar.css"
 	rel="stylesheet" type="text/css">
-<link
-	href="${pageContext.request.contextPath }/resources/css/button.css"
-	rel="stylesheet" type="text/css">
+<!-- <link -->
+<%-- 	href="${pageContext.request.contextPath }/resources/css/button.css" --%>
+<!-- 	rel="stylesheet" type="text/css"> -->
 
 	
 <%-- vue.js 링크 --%>
@@ -243,6 +243,43 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	<%-- 프로필 사진 변경 --%>
+	 function updateImage() {
+		 
+		    let profileForm = $('#profile')[0];  // 이녀석도 배열로 리턴이 된다.
+		    // console.log(profileForm);
+		    let formData = new FormData(profileForm);  // 폼의 모든 데이터를 가지고 있다.
+		    $.ajax({
+		      type: "put",
+		      url: "/user/profileUpdate",
+		      contentType: false,  // x-www 으로 파싱하지 마라 
+		      processData: false, // 쿼리스트링으로 파싱하지 마라
+		      data: formData,
+		      enctype: "multipart/form-data",
+
+		      dataType: "json"
+		    }).done((res) => {
+		      alert(res.msg);
+		      location.href = "/"
+		    }).fail((err) => {
+		      alert(err.responseJSON.msg);
+		    });
+		    
+	}
+	
+	let reader = new FileReader();
+	
+	reader.onload = function (e){ 
+		  // 콜백함수를 등록 readAsDataURL 끝나면 다음 함수를 실행해라 !
+		  	   // console.log(e);
+		       $('.thumb_img').attr("src",e.target.result);
+		    }
+	
+</script>
+
 </head>
 <body>
  <%--네비게이션 바 영역 --%>
@@ -265,6 +302,7 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 			
 					<%-- 본문 - 프로필 관리 --%>
 						<div data-v-75326462="" data-v-473e7c14="" class="content_area">
+						<form action="/user/profileUpdate" method="post" enctype="multipart/form-data">
 							<div data-v-75326462="" class="my_profile">
 								<div data-v-88eb18f6="" data-v-75326462="" class="content_title border">
 									<div data-v-88eb18f6="" class="title">
@@ -272,14 +310,17 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 									</div>
 								</div>
 								<div data-v-4b474860="" data-v-75326462="" class="user_profile">
-									<input data-v-4b474860="" type="file" accept="image/jpeg,image/png" hidden="hidden">
+									<input type="file" accept=".jpeg,.png" id="profile" name="profile" hidden="hidden" onchange="updateImage()">
 									<div data-v-4b474860="" class="profile_thumb">
-										<img data-v-4b474860="" src="assets/img/blank_profile.4347742.png" alt="사용자 이미지" class="thumb_img">
+										<img data-v-4b474860="" src="${pageContext.request.contextPath }/resources/img_member/blank_profile.4347742.png" alt="사용자 이미지" class="thumb_img">
 									</div>
 									<div data-v-4b474860="" class="profile_detail">
 										<strong data-v-4b474860="" class="name">김커피</strong>
 										<div data-v-4b474860="" class="profile_btn_box">
-											<button data-v-43813796="" data-v-4b474860="" type="button" class="btn outlinegrey small"> 이미지 변경 </button>
+											<label for="profile">
+												<div data-v-43813796="" data-v-4b474860="" class="btn outlinegrey small" >이미지 변경</div>
+<!-- 												<button data-v-43813796="" data-v-4b474860="" type="button" class="btn outlinegrey small" >이미지 변경</button> -->
+											</label>
 											<button data-v-43813796="" data-v-4b474860="" type="button" class="btn outlinegrey small"> 삭제 </button>
 										</div>
 									</div>
@@ -321,6 +362,8 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 							</div>
 							<div data-v-75326462="" class="v-portal" style="display: none;">
 							</div>
+							
+						</form>	
 						</div>
 					</div>
 				</div>
