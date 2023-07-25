@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +54,7 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/pc-static/resource/a1e2916….png);
+    background-image: url(/zero/resources/mypage_img/store_bg.png);
     background-color: rgb(181, 181, 181);
 }
 
@@ -458,8 +459,8 @@ a {
 			<div class="contentArea">
 			<%-- 메인영역 --%>
 				<div data-v-473e7c14="" class="my lg">
-<!-- 				<div data-v-473e7c14="" class="container my lg"> -->
-					<div data-v-473e7c14="">
+<!-- 				<div data-v-473e7c14="" class="my lg"> -->
+<!-- 					<div data-v-473e7c14=""> -->
 			
 						<%-- 본문 - 나의 상점 --%>
 						<div class="sc-fAJaQT gHsrAW">
@@ -551,15 +552,16 @@ a {
 								</div>
 								<div class="sc-eqPNPO crpdHA">
 									<div class="sc-ileJJU ljwWRl">
-										<div class="sc-jxGEyO khHtgc"><div>상품
-											<span class="sc-ghsgMZ kmGPmj">1</span>
-										</div>
-										<div class="sc-ekulBa inRpvj">
-											<div class="sc-erNlkL ijiqeP">
-												<div class="sc-iuDHTM zWYgi">전체
-													<img src="/pc-static/resource/9b606ef2e7d57fafa657.png" width="10" height="6" alt="카테고리 화살표 아이콘">
-												</div>
-												<div class="sc-FQuPU iDlcuM">
+										<div class="sc-jxGEyO khHtgc">
+											<div>상품
+												<span class="sc-ghsgMZ kmGPmj">1</span>
+											</div>
+											<div class="inRpvj">
+<!-- 											<div class="sc-erNlkL ijiqeP"> -->
+<!-- 												<div class="sc-iuDHTM zWYgi">전체 -->
+<!-- 													<img src="/pc-static/resource/9b606ef2e7d57fafa657.png" width="10" height="6" alt="카테고리 화살표 아이콘"> -->
+<!-- 												</div> -->
+<!-- 												<div class="sc-FQuPU iDlcuM"> -->
 			<!-- 										<a class="sc-kEmuub cohUeK">전체</a> -->
 			<!-- 										<a class="sc-kEmuub zPWkt">키덜트</a> -->
 													<select class="form-control">
@@ -567,16 +569,16 @@ a {
 														<option value="카테고리1">카테고리1</option>
 														<option value="카테고리2">카테고리2</option>
 													</select>
-												</div>
+<!-- 												</div> -->
+<!-- 											</div> -->
 											</div>
-										</div>
 										</div>
 										<div class="sc-dznXNo fpPGpL">
 											<div class="sc-ciodno hiHzLz">
 												<div class="sc-gacfCG giJkiq">
 													<div class="sc-jkCMRl kJRqmA">
 														<div>전체</div>
-														<div class="sc-bqjOQT kIgFPj">1개</div>
+														<div class="sc-bqjOQT kmGPmj">1개</div>
 													</div>
 													<div class="sc-dEfkYy fAkqZn">
 														<a class="sc-cqPOvA kPUmxO">최신순</a>
@@ -664,7 +666,7 @@ a {
 				</div>
 			</div>
 			
-		</div>
+<!-- 		</div> -->
 	</article>
 	
 	<footer>

@@ -209,6 +209,10 @@ ul {
     margin-bottom: 8px;
 }
 
+.outline[data-v-43813796] {
+    border: 1px solid #d3d3d3;
+}
+
 </style>
 </head>
 <body>
@@ -246,17 +250,17 @@ ul {
 <!-- 				<a disabled="disabled" href="#" class="btn full solid disabled" data-v-43813796="" data-v-2b15bea4=""> 로그인 </a> -->
 <!-- 			</div> -->
 			<div data-v-2b15bea4="" class="login_btn_box">
-				<a data-v-43813796="" data-v-2b15bea4="" href="#" class="btn full solid disabled"> 로그인 </a>
+				<a data-v-43813796="" data-v-2b15bea4="" href="#" class="btn full solid"> 로그인 </a>
 			</div>
 			<ul class="look_box" data-v-2b15bea4="">
 				<li class="look_list" data-v-2b15bea4="">
-					<a href="/join" class="look_link" data-v-2b15bea4=""> 이메일 가입 </a>
+					<a href="join" class="look_link" data-v-2b15bea4=""> 이메일 가입 </a>
 				</li> |
 				<li class="look_list" data-v-2b15bea4="">
-					<a href="/login/find_email" class="look_link" data-v-2b15bea4=""> 이메일 찾기 </a>
+					<a href="member_find_id" class="look_link" data-v-2b15bea4=""> 이메일 찾기 </a>
 				</li> |
 				<li class="look_list" data-v-2b15bea4="">
-					<a href="/login/find_password" class="look_link" data-v-2b15bea4=""> 비밀번호 찾기 </a>
+					<a href="member_find_passwd" class="look_link" data-v-2b15bea4=""> 비밀번호 찾기 </a>
 				</li>
 			</ul>
 			<div><a href="#" class="look_link">인증 메일이 오지 않아요</a></div>

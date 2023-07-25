@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,32 +8,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jtsage-datebox-bootstrap4@5.3.3/jtsage-datebox.min.js" type="text/javascript"></script>
-<link href="${pageContext.request.contextPath }/resources/css/default.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath }/resources/css/main.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath }/resources/css/defualt.css" rel="stylesheet" type="text/css">
 
 <meta charset="UTF-8">
-<title>ZERO</title>
-<script type="text/javascript">
-</script>
+<%-- 반응형웹페이지위한 설정 --%>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Insert title here</title>
 </head>
+
 <body>
-	<header>
-		<%@ include file="../inc/header.jsp"%>
-	</header>
+
+<div class="container">
+	<div class="row" style="border:1px solid dot;">
 	
-	<article>
-		<div class="container">
-			<nav id="mainNav" class="sidebarArea d-none d-md-block sidebar">
-				<jsp:include page="/WEB-INF/views/inc/member_sidebar.jsp"></jsp:include>
-			</nav>
-			<div class="contentArea">
-			<%-- 메인영역 --%>
-			
-			</div>
-			
-		</div>
-	</article>
 	
-	<footer>
-	</footer>
+	</div>
+</div>
+
 </body>
 </html>

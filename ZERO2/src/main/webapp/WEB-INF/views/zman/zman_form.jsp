@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,30 +10,42 @@
 <script src="https://cdn.jsdelivr.net/npm/jtsage-datebox-bootstrap4@5.3.3/jtsage-datebox.min.js" type="text/javascript"></script>
 <link href="${pageContext.request.contextPath }/resources/css/default.css" rel="stylesheet" type="text/css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <meta charset="UTF-8">
-<title>ZERO</title>
-<script type="text/javascript">
+<title>Insert title here</title>
+<style type="text/css">
+	#user_membership {
+		margin: 25px;
+	}
+</style>
+<script>
+  $(function(){
+    $('.datepicker').datepicker();
+  })
 </script>
 </head>
 <body>
+	<%-- 헤더 영역 --%>
 	<header>
 		<%@ include file="../inc/header.jsp"%>
 	</header>
-	
-	<article>
+		
+	<article id="mainArticle">
 		<div class="container">
+			<%-- 사이드 바 영역 --%>
 			<nav id="mainNav" class="sidebarArea d-none d-md-block sidebar">
-				<jsp:include page="/WEB-INF/views/inc/member_sidebar.jsp"></jsp:include>
+				<jsp:include page="/WEB-INF/views/inc/zman_sidebar.jsp"></jsp:include>
 			</nav>
 			<div class="contentArea">
-			<%-- 메인영역 --%>
-			
+				<div id="main">
+					
+				
+				</div> <%-- <div id="main">  --%>
 			</div>
-			
 		</div>
 	</article>
-	
-	<footer>
-	</footer>
+</body>
 </body>
 </html>

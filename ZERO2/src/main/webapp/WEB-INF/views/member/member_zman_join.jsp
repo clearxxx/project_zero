@@ -26,7 +26,6 @@
 <link
 	href="${pageContext.request.contextPath }/resources/css/button.css"
 	rel="stylesheet" type="text/css">
-
 	
 <%-- vue.js 링크 --%>
 <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
@@ -53,79 +52,59 @@
 <!-- <script data-n-head="ssr" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script> -->
 
 
-<title>중고거래 사이트</title>
+
+<title>Z-MAN 신청</title>
 <style>
 
-.container.my .content_area[data-v-473e7c14] {
-    overflow: hidden;
-    min-height: 380px;
-}
-*, :after, :before {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-div {
-    display: block;
-    
-}
-body, button, input, select, table, textarea {
-    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    color: #222;
-    -webkit-font-feature-settings: "frac" 0,"numr" 0;
-    font-feature-settings: "frac" 0,"numr" 0;
+.login_area[data-v-2b15bea4] {
+    margin: 0 auto;
+    padding: 60px 0 160px;
+    width: 400px;
 }
 
-<%-- 프로필 관리 --%>
-.lg .user_profile[data-v-4b474860], .md .user_profile[data-v-4b474860] {
+.logo-social[data-v-2b15bea4] {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    left: 15px;
+}
+.input_title[data-v-4e1fd2e6] {
+    font-size: 13px;
+    letter-spacing: -.07px;
+    line-height: 18px;
+}
+
+.solid.disabled[data-v-43813796], .solid[data-v-43813796]:disabled {
+    background-color: #ebebeb;
+    color: #fff;
+    cursor: default;
+}
+
+.has_button .input_txt[data-v-4e1fd2e6] {
+    padding-right: 30px;
+    height: 38px;
+}
+
+.input_txt[data-v-4e1fd2e6] {
+    padding: 8px 0;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: -.15px;
+    line-height: 22px;
     border-bottom: 1px solid #ebebeb;
 }
 
-.user_profile[data-v-4b474860] {
-    display: flex;
-    align-items: center;
-    padding: 38px 0;
-    background-color: #fff;
+input, textarea {
+    padding: 0;
+    outline: 0;
+    border: 0;
+    resize: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
 }
 
-.title[data-v-88eb18f6] {
-    font-size: 24px;
-    letter-spacing: -.36px;
-}
-
-.title>h3[data-v-88eb18f6] {
-    line-height: 29px;
-    font-size: inherit;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.content_title.border[data-v-88eb18f6] {
-    padding-bottom: 16px;
-    border-bottom: 3px solid #222;
-}
-
-<%-- 버튼 설정 --%>
-.outlinegrey[data-v-43813796] {
-    border: 1px solid #d3d3d3;
-    color: rgba(34,34,34,.8);
-}
-.small[data-v-43813796], .xsmall[data-v-43813796] {
-    font-size: 12px;
-    letter-spacing: -.06px;
-}
-.small[data-v-43813796] {
-    padding: 0 14px;
-    height: 34px;
-    border-radius: 10px;
-}
 .btn[data-v-43813796] {
     display: inline-flex;
     cursor: pointer;
@@ -137,95 +116,39 @@ h3 {
     background-color: #fff;
 }
 
-button {
-    padding: 0;
-    border: 0;
-    outline: none;
-    background: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0;
-}
-
-.profile_btn_box .btn+.btn[data-v-4b474860] {
-    margin-left: 8px;
-}
-<%-- 프로필 이미지 - 이름 --%>
-.profile_btn_box[data-v-4b474860] {
-    margin-top: 12px;
-    font-size: 0;
-}
-.profile_detail .name[data-v-4b474860] {
-    font-size: 18px;
-    letter-spacing: -.27px;
-    line-height: 1.2222222222;
-    color: #000;
-}
-
-
-<%-- 프로필 정보 속성 --%>
-.group_title[data-v-8b96a82e] {
-    font-size: 18px;
-    letter-spacing: -.27px;
-}
-h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-<%-- 프로필 이름/이름/소개 설정 --%>
-.title[data-v-0c9f3f9e] {
+.look_link[data-v-2b15bea4] {
+    margin: auto;
+    padding: 0 10px;
+    display: inline-flex;
     font-size: 13px;
     letter-spacing: -.07px;
-    font-weight: 400;
-    color: rgba(34,34,34,.5);
 }
 
-h5 {
-    display: block;
-    font-size: 0.83em;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-<%-- 영역 밑줄 설정 --%>
-.unit[data-v-0c9f3f9e] {
-    display: flex;
-    flex-direction: column;
-    padding: 25px 0 12px;
-    position: relative;
-    border-bottom: 1px solid #ebebeb;
+
+	
+<%-- 인증에러 --%>
+.input_error[data-v-4e1fd2e6] {
+    display: none;
 }
 
-<%-- 변경 영역 설정 --%>
-.unit_content[data-v-0c9f3f9e] {
+*, :after, :before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.full[data-v-43813796] {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.desc_modify[data-v-e5372ca2] {
-    padding-right: 58px;
-}
-
-.desc[data-v-24a03828] {
-    flex: 1;
-    padding-top: 8px;
-    padding-bottom: 8px;
     font-size: 16px;
     letter-spacing: -.16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    font-weight: 700;
+    height: 52px;
+    border-radius: 12px;
+}
+
+ div {
+    padding: 0px;
+    background: white;
+    display: block;
 }
 
 p {
@@ -236,104 +159,194 @@ p {
     margin-inline-end: 0px;
 }
 
-body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
-    margin: 0;
-    padding: 0;
+
+
+.solid[data-v-43813796] {
+    font-weight: 700;
+    color: #fff;
+    background-color: #222;
 }
 
+*, :after, :before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+link {
+    display: none;
+}
+
+body, button, input, select, table, textarea {
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color: #222;
+    -webkit-font-feature-settings: "frac" 0,"numr" 0;
+    font-feature-settings: "frac" 0,"numr" 0;
+}
+
+.look_box[data-v-2b15bea4] {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+li, ol, ul {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+<%-- 로그인 버튼 --%>
+.login_btn_box[data-v-2b15bea4] {
+    padding-top: 20px;
+}
+
+.social_login>.btn[data-v-2b15bea4] {
+    margin-bottom: 8px;
+}
+
+<%-- 체크박스 안나와서 강제로 추가함 모양 바꿀수있으면 바꾸기? --%>
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  appearance: checkbox;
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+}
 
 </style>
 </head>
 <body>
  <%--네비게이션 바 영역 --%>
-	<header>
-		<%@ include file="../inc/header.jsp"%>
-	</header>
-	
-	<article id="mainArticle">
-		<div class="container">
-			<nav id="mainNav" class="sidebarArea d-none d-md-block sidebar">
-				<jsp:include page="/WEB-INF/views/inc/member_sidebar.jsp"></jsp:include>
-			</nav>
-		
-			<div class="contentArea">
-			<%-- 메인영역 --%>
+ <header id="pageHeader"><%@ include file="../inc/header.jsp"%></header>
+<%--  <header id="pageHeader"><%@ include file="assets/inc/header_zero.jsp"%></header> --%>
+ 
+  <%--본문내용 --%>
+  <article id="mainArticle">
+	<div class="container login" data-v-2b15bea4="" data-v-1d0b532e="">
+		<div class="content lg" data-v-2b15bea4="">
+			<div class="login_area" data-v-2b15bea4="">
+				<h2 class="login_title" data-v-2b15bea4="">
+					<span class="blind" data-v-2b15bea4="">Z-MAN 신청</span>
+				</h2><br>
+				
+				<%-- 클래스 이름 바꾸기 / 이름, 이메일은 로그인한 회원정보에서 가져오기 --%>
+				<div class="input_box has_button" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">이름</h3>
+					<input type="text" placeholder="이름" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				</div><br>
+				
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">이메일 주소</h3>
+					<input type="email" placeholder="예) kream@kream.co.kr" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				</div><br>
+				
+				<div class="input_box has_button" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">비밀번호</h3>
+					<input type="password" placeholder="영문, 숫자, 특수문자를 조합해서 입력해주세요. (8-16자)" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				</div><br>
+			
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">생년월일</h3>
+					<input type="text" placeholder="생년월일 8자리를 입력해 주세요" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				</div><br>
+			
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">운전면허증</h3>
+					<input type="text" placeholder="운전면허증 번호를 입력해 주세요" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				</div><br>
+			
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">휴대폰번호</h3>
+					<input type="text" placeholder="- 없이 입력" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				<button>인증번호 받기</button>
+				</div>
+			
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4=""></h3>
+					<input type="text" placeholder="인증번호를 입력해 주세요" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				<button>핸드폰 번호 인증확인</button>
+				</div>
+				<br>
+				
+				<%-- 계좌번호 인증할때 은행 선택한값 가져오기? --%>
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">계좌번호</h3>
+					<input type="text" placeholder="- 없이 입력" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				<button>계좌인증 받기</button>
+				</div>
+				<br>
+			
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4=""></h3>
+					<input type="text" placeholder="인증번호를 입력해 주세요" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				<button>계좌 인증확인</button>
+				</div>
+				<br>
+				
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">주소지 입력</h3>
+					<input type="text" placeholder="" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+					<input type="text" placeholder="상세주소를 입력해 주세요" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				<button>주소지찾기</button>
+				</div>
+				<br>
+				
+				<div class="has_button input_box" data-v-4e1fd2e6="" data-v-2b15bea4="">
+					<h3 class="input_title" data-v-4e1fd2e6="" data-v-2b15bea4="">활동 지역 선택</h3>
+					<input type="text" placeholder="" autocomplete="off" class="input_txt" data-v-4e1fd2e6="">
+				<button>지역찾기</button>
+				</div>
+				<br>	
+					
+				<div>
+					<label for="agree_all">
+					  <input type="checkbox" name="agree_all" id="agree_all">
+					  <span>모두 동의합니다</span>
+					</label><br>
+					<label for="agree">
+					  <input type="checkbox" name="agree" value="1">
+					  <span>이용약관 동의<strong>(필수)</strong></span>
+					</label>
+					<label for="agree">
+					  <input type="checkbox" name="agree" value="2">
+					  <span>개인정보 수집, 이용 동의<strong>(필수)</strong></span>
+					</label>
+					<label for="agree">
+					  <input type="checkbox" name="agree" value="3">
+					  <span>개인정보 이용 동의<strong>(필수)</strong></span>
+					</label>
+					<label for="agree">
+					  <input type="checkbox" name="agree" value="4">
+					  <span>이벤트, 혜택정보 수신동의<strong class="select_disable">(선택)</strong></span>
+					</label>
+				</div>
+				
+				<div data-v-2b15bea4="" class="login_btn_box">
+					<a data-v-43813796="" data-v-2b15bea4="" href="#" class="btn full solid"> Z-MAN 신청 </a>
+				</div>
 			
 
-				<div data-v-473e7c14="" class=" my lg">
-					<div data-v-473e7c14="">
-			
-					<%-- 본문 - 프로필 관리 --%>
-						<div data-v-75326462="" data-v-473e7c14="" class="content_area">
-							<div data-v-75326462="" class="my_profile">
-								<div data-v-88eb18f6="" data-v-75326462="" class="content_title border">
-									<div data-v-88eb18f6="" class="title">
-										<h3 data-v-88eb18f6="">프로필 관리</h3>
-									</div>
-								</div>
-								<div data-v-4b474860="" data-v-75326462="" class="user_profile">
-									<input data-v-4b474860="" type="file" accept="image/jpeg,image/png" hidden="hidden">
-									<div data-v-4b474860="" class="profile_thumb">
-										<img data-v-4b474860="" src="assets/img/blank_profile.4347742.png" alt="사용자 이미지" class="thumb_img">
-									</div>
-									<div data-v-4b474860="" class="profile_detail">
-										<strong data-v-4b474860="" class="name">김커피</strong>
-										<div data-v-4b474860="" class="profile_btn_box">
-											<button data-v-43813796="" data-v-4b474860="" type="button" class="btn outlinegrey small"> 이미지 변경 </button>
-											<button data-v-43813796="" data-v-4b474860="" type="button" class="btn outlinegrey small"> 삭제 </button>
-										</div>
-									</div>
-								</div>
-								<div data-v-75326462="" class="profile_info">
-									<div data-v-8b96a82e="" data-v-75326462="" class="profile_group">
-										<h4 data-v-8b96a82e="" class="group_title">프로필 정보</h4>
-										<div data-v-0c9f3f9e="" data-v-e5372ca2="" data-v-75326462="" class="unit" data-v-8b96a82e="">
-											<h5 data-v-0c9f3f9e="" class="title">프로필 이름</h5>
-											<div data-v-0c9f3f9e="" class="unit_content">
-												<p data-v-24a03828="" data-v-e5372ca2="" class="desc desc_modify" data-v-0c9f3f9e=""> 5datdr </p>
-												<button data-v-43813796="" data-v-e5372ca2="" type="button" class="btn btn_modify outlinegrey small" data-v-0c9f3f9e=""> 변경 </button>
-											</div>
-										</div>
-										<div data-v-0c9f3f9e="" data-v-e5372ca2="" data-v-75326462="" class="unit" data-v-8b96a82e="">
-											<h5 data-v-0c9f3f9e="" class="title">이름</h5>
-											<div data-v-0c9f3f9e="" class="unit_content">
-												<p data-v-24a03828="" data-v-e5372ca2="" class="desc desc_modify" data-v-0c9f3f9e=""> 아이디 </p>
-												<button data-v-43813796="" data-v-e5372ca2="" type="button" class="btn btn_modify outlinegrey small" data-v-0c9f3f9e=""> 변경 </button>
-											</div>
-										</div>
-										<div data-v-0c9f3f9e="" data-v-e5372ca2="" data-v-75326462="" class="unit" data-v-8b96a82e="">
-											<h5 data-v-0c9f3f9e="" class="title">소개</h5>
-											<div data-v-0c9f3f9e="" class="unit_content">
-												<p data-v-24a03828="" data-v-e5372ca2="" class="desc desc_modify placeholder" data-v-0c9f3f9e=""> 나를 소개하세요 </p>
-												<button data-v-43813796="" data-v-e5372ca2="" type="button" class="btn btn_modify outlinegrey small" data-v-0c9f3f9e=""> 변경 </button>
-											</div>
-										</div>
-									</div>
-									<div data-v-8b96a82e="" data-v-75326462="" class="profile_group">
-										<h4 data-v-8b96a82e="" class="group_title">프로필 차단/해제</h4>
-										<div data-v-0c9f3f9e="" data-v-75326462="" class="unit" data-v-8b96a82e="">
-											<div data-v-0c9f3f9e="" class="unit_content">
-												<p data-v-24a03828="" data-v-75326462="" class="desc" role="button" data-v-0c9f3f9e=""> 차단한 프로필 </p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div data-v-75326462="" class="v-portal" style="display: none;">
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
+	</div>
+
   </article>
   
-
-
+  <nav id="mainNav" class="d-none d-md-block sidebar">
+  <%--왼쪽 사이드바 --%>
+  </nav>
   
   <div id="sieAds"></div>
   <%--페이지 하단 --%>
-  <footer id="pageFooter"></footer>
+<%--   <footer id="pageFooter"><%@ include file="assets/inc/footer.jsp"%></footer> --%>
   
   
   <%-- 스크립트 코드 --%>
@@ -344,5 +357,34 @@ body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h
 <!--   <script src="/_nuxt/31641e8.js" defer=""></script> -->
 <!--   <link href="/_nuxt/css/6ca5ffb.css" rel="stylesheet" type="text/css"> -->
 <!--   <link href="/_nuxt/css/caea5a4.css" rel="stylesheet" type="text/css"> -->
+
+	<script type="text/javascript">
+	  // 동의 모두선택/해제
+	  const agreeChkAll = document.querySelector('input[name=agree_all]');
+	  const agreeChk = document.querySelectorAll('input[name=agree]');
+
+	  agreeChkAll.addEventListener('change', (e) => {
+	    for (let i = 0; i < agreeChk.length; i++) {
+	      agreeChk[i].checked = e.target.checked;
+	    }
+	  });
+
+	  const updateAgreeAllStatus = () => {
+	    let allChecked = true;
+	    for (let i = 0; i < agreeChk.length; i++) {
+	      if (!agreeChk[i].checked) {
+	        allChecked = false;
+	        break;
+	      }
+	    }
+	    agreeChkAll.checked = allChecked;
+	  };
+
+	  for (let i = 0; i < agreeChk.length; i++) {
+	    agreeChk[i].addEventListener('change', () => {
+	      updateAgreeAllStatus();
+	    });
+	  }
+	</script>
   
 </body>
